@@ -8,7 +8,19 @@
 | https://alsndlmsn.github.io/health-center-site/downloads/HealthCenter-Portable-1.0.0.exe | تطبيق المركز الصحي 1.0.0 (91.6 م.ب) |
 | https://alsndlmsn.github.io/health-center-site/downloads/دليل-الاستخدام-نظام-المركز-الصحي.pdf | دليل الاستخدام (65 صفحة) |
 
-لتحديث الموقع لاحقًا بعد تعديل ملفاته: `node scripts/publish-site.js` (يستنسخ المستودع ويضيف التزامًا جديدًا دون حذف السجل).
+## تحديث الموقع لإصدار جديد
+
+من جذر المشروع:
+
+```bash
+npm run site:release -- --publish
+```
+
+يبني نسخة Portable، ويقارن بصمتها بما هو منشور، ويحدّث اسم الملف والإصدار والتاريخ والحجم
+في `script.js` و`index.html`، ثم يتفحص الموقع بخادم محلي (بما فيه بصمة SHA-256) وينشره على
+GitHub Pages. لإعادة نشر تعديلات الموقع فقط دون بناء: `npm run site:publish`.
+
+معاينة ما سيتغير دون كتابة أي ملف: `node scripts/release-site.js --version 1.1.0 --dry-run`.
 
 موقع تسويقي عربي (RTL) لنظام إدارة المركز الصحي، متوافق مع الهاتف والكمبيوتر، وزرّاه
 ينزّلان ملفات حقيقية موجودة داخل المجلد نفسه.
