@@ -1,4 +1,14 @@
-# موقع المركز الصحي — النسخة الجاهزة للنشر
+# موقع المركز الصحي — النسخة المنشورة
+
+**الموقع المباشر:** https://alsndlmsn.github.io/health-center-site/
+**المستودع:** https://github.com/alsndlmsn/health-center-site
+
+| الرابط | الملف |
+|---|---|
+| https://alsndlmsn.github.io/health-center-site/downloads/HealthCenter-Portable-1.0.0.exe | تطبيق المركز الصحي 1.0.0 (91.6 م.ب) |
+| https://alsndlmsn.github.io/health-center-site/downloads/دليل-الاستخدام-نظام-المركز-الصحي.pdf | دليل الاستخدام (65 صفحة) |
+
+لتحديث الموقع لاحقًا بعد تعديل ملفاته: `node scripts/publish-site.js` (يستنسخ المستودع ويضيف التزامًا جديدًا دون حذف السجل).
 
 موقع تسويقي عربي (RTL) لنظام إدارة المركز الصحي، متوافق مع الهاتف والكمبيوتر، وزرّاه
 ينزّلان ملفات حقيقية موجودة داخل المجلد نفسه.
