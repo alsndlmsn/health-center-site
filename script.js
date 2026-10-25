@@ -10,7 +10,7 @@
 const APP_CONFIG = {
   name: "نظام إدارة المركز الصحي",
   version: "1.0.0",
-  buildDate: "16 أكتوبر 2026",
+  buildDate: "25 أكتوبر 2026",
   os: "Windows",
   type: "Desktop Application",
   appFile: "downloads/HealthCenter-Portable-1.0.0.exe",
